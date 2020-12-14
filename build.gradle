@@ -1,0 +1,177 @@
+
+plugins {
+	id 'java'
+	id 'org.springframework.boot'  version "2.1.9.RELEASE"	
+}
+
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: "java"
+apply plugin: "war"
+
+
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 10
+targetCompatibility = 10
+
+
+
+
+
+// 工程参数
+ext{
+    
+	outdir="querydsl"
+}
+
+// 源代码目录设置
+sourceSets {
+        main{
+            java {
+                srcDirs "src/main/java"
+				srcDirs "base/$outdir/java"   
+				srcDirs "base/main/java"
+			}
+        }
+ }
+//srcDirs "pojo/main/java"
+
+configurations {
+       developmentOnly
+	    runtimeClasspath {
+		    extendsFrom developmentOnly
+	    }
+	    compileOnly {
+		    extendsFrom annotationProcessor
+	    }
+}
+
+
+
+repositories {
+    mavenLocal()
+   // maven {url "http://maven.oschina.net/content/groups/public/"}    
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+
+	compile files('libs/swallow3-webserver-framework-0.0.3-SNAPSHOT.jar')
+	compile files('libs/swallow3-devtool-0.0.1-SNAPSHOT.jar')
+
+
+	providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+     
+    // springboot引用
+	implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+	compile('org.springframework.boot:spring-boot-starter-aop')
+	
+	// 其它引用
+	implementation ('com.querydsl:querydsl-jpa:4.2.1')
+	implementation ('io.springfox:springfox-swagger2:2.9.2')
+	implementation('io.springfox:springfox-swagger-ui:2.9.2')
+	implementation('org.apache.poi:poi:3.15')
+	implementation('org.apache.poi:poi-ooxml:3.15')
+	implementation('net.sf.json-lib:json-lib:2.4:jdk15')
+
+    // apache库
+	implementation('org.apache.commons:commons-lang3:3.8')
+
+	// 运行时引用
+	runtimeOnly('org.springframework.boot:spring-boot-devtools')
+	runtimeOnly('mysql:mysql-connector-java:8.0.18')
+
+
+	implementation('com.alibaba:fastjson:1.2.51')
+	implementation('commons-io:commons-io:2.2')
+	
+	implementation('org.apache.httpcomponents:httpcore:4.4.4')
+	implementation('org.apache.httpcomponents:httpclient:4.5.2')
+
+	// 测试引用
+	testCompile('com.squareup:javapoet:1.11.1')
+	testImplementation('org.springframework.boot:spring-boot-starter-test')
+	testImplementation('io.projectreactor:reactor-test')
+    
+   
+    // querydsl 代码生成组件
+	if (project.hasProperty("genCode")) {
+
+		annotationProcessor 'org.springframework.boot:spring-boot-starter-data-jpa'
+		annotationProcessor 'com.querydsl:querydsl-jpa:4.2.1'
+		annotationProcessor 'com.querydsl:querydsl-apt:4.2.1:jpa'
+	}
+	
+	
+}
+
+
+
+// 修改编译任务
+compileJava {	
+	// 设置 在编译指令后加-PgenCode 进行代码生成
+	doFirst{
+
+		if (project.hasProperty("genCode")) {
+			// 生成或清队目录原有的数据
+			file(new File(projectDir, "/base/querydsl/java")).deleteDir()
+			// 确保辅助文件所在的位置
+			file(new File(projectDir, "/base/querydsl/java")).mkdirs()	
+
+			options.compilerArgs << "-s"
+			options.compilerArgs << "$projectDir/base/querydsl/java"	
+		}
+	}
+}
+
+
+
+// 将依赖包复制到lib目录
+task copyJar(type: Copy) {
+	// 清除现有的lib目录
+	delete "$buildDir/libs/lib"
+	from configurations.compileClasspath
+	into "$buildDir/libs/lib"
+}
+
+// 拷贝配置文件
+task copyConfigFile(type: Copy) {
+	// 清除现有的配置目录
+	delete "$buildDir/libs/config"
+	from('src/main/resources')
+	into 'build/libs/config'
+}
+
+// 配置bootJar进行打包
+bootJar {
+	// jar包名称，默认是settings.gradle下的工程名 rootProject.name = 'alog-server'
+//	baseName = 'alog-server'
+	// jar包版本号
+//	version =  '0.0.1'
+	// 排除所有的jar
+	excludes = ["*.yml","*.xml"]
+	// lib目录的清除和复制任务
+//	dependsOn copyJar
+	// 配置目录的清除和复制任务
+	dependsOn copyConfigFile
+
+	// 指定依赖包的路径
+	manifest {
+		attributes "Manifest-Version": 1.0,
+				'Class-Path': configurations.compileClasspath.files.collect { "lib/$it.name" }.join(' ')
+	}
+}
+jar {
+	enabled = false		
+}
+
+// 设置使用utf8文件格式
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+
+
+    
+    

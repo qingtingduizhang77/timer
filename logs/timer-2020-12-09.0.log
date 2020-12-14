@@ -1,0 +1,81 @@
+2020-12-09 16:21:04,515 [restartedMain] INFO  com.timer.TimerApplication:50 - Starting TimerApplication on 360PC-20151102P with PID 8148 (D:\svn\preedu\service\out\production\classes started by Administrator in D:\svn\preedu\service)
+2020-12-09 16:21:04,518 [restartedMain] INFO  com.timer.TimerApplication:652 - The following profiles are active: dev
+2020-12-09 16:21:04,583 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor:225 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-09 16:21:04,583 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor:225 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-09 16:21:05,426 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-09 16:21:05,470 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 37ms. Found 0 repository interfaces.
+2020-12-09 16:21:05,875 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$31421686] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 16:21:06,213 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 9501 (http)
+2020-12-09 16:21:06,229 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-9501"]
+2020-12-09 16:21:06,239 [restartedMain] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2020-12-09 16:21:06,239 [restartedMain] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-12-09 16:21:06,386 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+2020-12-09 16:21:06,387 [restartedMain] INFO  org.springframework.web.context.ContextLoader:284 - Root WebApplicationContext: initialization completed in 1803 ms
+2020-12-09 16:21:06,542 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig:1008 - {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-12-09 16:21:06,542 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+2020-12-09 16:21:06,799 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+2020-12-09 16:21:06,839 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-09 16:21:06,889 [restartedMain] INFO  org.hibernate.Version:46 - HHH000412: Hibernate Core {5.3.12.Final}
+2020-12-09 16:21:06,890 [restartedMain] INFO  org.hibernate.cfg.Environment:213 - HHH000206: hibernate.properties not found
+2020-12-09 16:21:07,065 [restartedMain] INFO  org.hibernate.annotations.common.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12-09 16:21:07,188 [restartedMain] INFO  org.hibernate.dialect.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-12-09 16:21:07,731 [restartedMain] INFO  org.hibernate.tuple.PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.timer.banjian.entity.SysExternalLog (class must be instantiated by Interceptor)
+2020-12-09 16:21:07,907 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-09 16:21:07,989 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2020-12-09 16:21:08,538 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 16:21:08,571 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:226 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-09 16:21:08,670 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2020-12-09 16:21:08,733 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-9501"]
+2020-12-09 16:21:08,760 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:202 - Tomcat started on port(s): 9501 (http) with context path ''
+2020-12-09 16:21:08,763 [restartedMain] INFO  com.timer.TimerApplication:59 - Started TimerApplication in 5.223 seconds (JVM running for 6.874)
+2020-12-09 16:22:27,282 [Thread-9] WARN  com.timer.banjian.service.BjAcceptService:78 - 系统异常：请求异常：Connection timed out: connect
+2020-12-09 16:22:27,294 [Thread-9] WARN  com.timer.socketServer.SocketService:34 - 系统异常：请求异常：Connection timed out: connect
+2020-12-09 16:22:27,396 [Thread-9] DEBUG org.hibernate.SQL:103 - insert into sys_external_log (version, api_type, app_id, created, message, req_desc, res_desc, status, type) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-12-09 16:22:27,396 [Thread-9] DEBUG org.hibernate.SQL:103 - insert into sys_external_log (version, api_type, app_id, created, message, req_desc, res_desc, status, type) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-12-09 16:22:27,423 [Thread-9] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2020-12-09 16:22:27,496 [Thread-9] DEBUG org.hibernate.SQL:103 - select sysexterna0_.id as id1_3_, sysexterna0_.version as version2_3_, sysexterna0_.api_type as api_type3_3_, sysexterna0_.app_id as app_id4_3_, sysexterna0_.created as created5_3_, sysexterna0_.message as message6_3_, sysexterna0_.req_desc as req_desc7_3_, sysexterna0_.res_desc as res_desc8_3_, sysexterna0_.status as status9_3_, sysexterna0_.type as type10_3_ from sys_external_log sysexterna0_ where sysexterna0_.id=? limit ?
+2020-12-09 16:22:27,496 [Thread-9] DEBUG org.hibernate.SQL:103 - select sysexterna0_.id as id1_3_, sysexterna0_.version as version2_3_, sysexterna0_.api_type as api_type3_3_, sysexterna0_.app_id as app_id4_3_, sysexterna0_.created as created5_3_, sysexterna0_.message as message6_3_, sysexterna0_.req_desc as req_desc7_3_, sysexterna0_.res_desc as res_desc8_3_, sysexterna0_.status as status9_3_, sysexterna0_.type as type10_3_ from sys_external_log sysexterna0_ where sysexterna0_.id=? limit ?
+2020-12-09 16:28:21,932 [Thread-8] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2020-12-09 16:28:21,932 [Thread-8] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-09 16:28:21,933 [Thread-8] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-09 16:28:21,938 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2020-12-09 16:28:21,948 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2020-12-09 16:43:47,038 [restartedMain] INFO  com.timer.TimerApplication:50 - Starting TimerApplication on 360PC-20151102P with PID 10840 (D:\svn\preedu\service\out\production\classes started by Administrator in D:\svn\preedu\service)
+2020-12-09 16:43:47,041 [restartedMain] INFO  com.timer.TimerApplication:652 - The following profiles are active: dev
+2020-12-09 16:43:47,107 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor:225 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-09 16:43:47,107 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor:225 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-09 16:43:47,874 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-09 16:43:47,902 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2020-12-09 16:43:48,243 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8853a34f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 16:43:48,543 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:90 - Tomcat initialized with port(s): 9501 (http)
+2020-12-09 16:43:48,557 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-9501"]
+2020-12-09 16:43:48,568 [restartedMain] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2020-12-09 16:43:48,568 [restartedMain] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-12-09 16:43:48,702 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+2020-12-09 16:43:48,702 [restartedMain] INFO  org.springframework.web.context.ContextLoader:284 - Root WebApplicationContext: initialization completed in 1594 ms
+2020-12-09 16:43:48,846 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig:1008 - {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-12-09 16:43:48,847 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+2020-12-09 16:43:49,111 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+2020-12-09 16:43:49,148 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-09 16:43:49,197 [restartedMain] INFO  org.hibernate.Version:46 - HHH000412: Hibernate Core {5.3.12.Final}
+2020-12-09 16:43:49,198 [restartedMain] INFO  org.hibernate.cfg.Environment:213 - HHH000206: hibernate.properties not found
+2020-12-09 16:43:49,348 [restartedMain] INFO  org.hibernate.annotations.common.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12-09 16:43:49,466 [restartedMain] INFO  org.hibernate.dialect.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-12-09 16:43:49,982 [restartedMain] INFO  org.hibernate.tuple.PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.timer.banjian.entity.SysExternalLog (class must be instantiated by Interceptor)
+2020-12-09 16:43:50,231 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-09 16:43:50,284 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2020-12-09 16:43:50,832 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 16:43:50,861 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:226 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-09 16:43:50,954 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2020-12-09 16:43:51,010 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-9501"]
+2020-12-09 16:43:51,033 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:202 - Tomcat started on port(s): 9501 (http) with context path ''
+2020-12-09 16:43:51,036 [restartedMain] INFO  com.timer.TimerApplication:59 - Started TimerApplication in 4.867 seconds (JVM running for 6.254)
+2020-12-09 16:43:53,641 [Thread-8] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2020-12-09 16:43:53,643 [Thread-8] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-09 16:43:53,645 [Thread-8] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-09 16:43:53,650 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2020-12-09 16:43:53,659 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource:352 - HikariPool-1 - Shutdown completed.

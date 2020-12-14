@@ -1,0 +1,50 @@
+
+spring:
+  # 数据库配置
+  datasource:    
+    url: jdbc:mysql://192.168.2.241:3306/preedu?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: develop
+    password: top123456
+    # 对联结池进行配置 确保联结池不会假死
+    hikari:
+      idle-timeout: 280000
+      validation-timeout: 3000
+      connection-test-query: SELECT 1 FROM DUAL
+      max-lifetime: 300000
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      
+
+# 日志配置
+logging:
+  level:
+    root: info
+    org.hibernate.SQL: debug
+
+
+httpUrl:
+  # 办件受理
+  accept: https://10.148.26.26:8090/dockerAuthQueryServlet
+  # 办件结果
+  results:  https://10.148.26.26:8090/dockerAuthQueryServlet
+
+params:
+  apiType: deptCOMPLEX
+  userName: QJYJ
+  psd: 1390633414214ecead67f1a85a05a4d4
+  code1: ZWFWSJGLJ_DEPTCOMPLEX_QZSJ_BJSLXX5_2.0
+  code2: ZWFWSJGLJ_DEPTCOMPLEX_QZSJ_BJJGXX_2.0
+  apiId1: 1b032ff19851403dbfb822797f492b24
+  apiId2: 761b696e676241a0b527f236eac96845
+  STU_ITEMCODE: 70000700100754281414440342
+  TEA_ITEMCODE: 70000800100754281414440342
+
+socketconfig:
+  socketPort: 8886
+
+
+config:
+  cron: 0 0 1 1/1 * ?

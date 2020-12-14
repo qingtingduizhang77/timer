@@ -1,0 +1,167 @@
+2020-12-10 14:44:56,292 [restartedMain] INFO  com.timer.TimerApplication:50 - Starting TimerApplication on 360PC-20151102P with PID 2008 (D:\svn\preedu\service\out\production\classes started by Administrator in D:\svn\preedu\service)
+2020-12-10 14:44:56,296 [restartedMain] INFO  com.timer.TimerApplication:652 - The following profiles are active: dev
+2020-12-10 14:44:56,383 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor:225 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-10 14:44:57,015 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-10 14:44:57,044 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2020-12-10 14:44:57,470 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig:1008 - {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-12-10 14:44:57,471 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+2020-12-10 14:44:57,727 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+2020-12-10 14:44:57,785 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-10 14:44:57,849 [restartedMain] INFO  org.hibernate.Version:46 - HHH000412: Hibernate Core {5.3.12.Final}
+2020-12-10 14:44:57,851 [restartedMain] INFO  org.hibernate.cfg.Environment:213 - HHH000206: hibernate.properties not found
+2020-12-10 14:44:57,998 [restartedMain] INFO  org.hibernate.annotations.common.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12-10 14:44:58,108 [restartedMain] INFO  org.hibernate.dialect.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-12-10 14:44:58,877 [restartedMain] INFO  org.hibernate.tuple.PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.timer.banjian.entity.SysExternalLog (class must be instantiated by Interceptor)
+2020-12-10 14:44:59,045 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-10 14:44:59,108 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2020-12-10 14:44:59,428 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2020-12-10 14:44:59,475 [restartedMain] INFO  com.timer.TimerApplication:59 - Started TimerApplication in 3.8 seconds (JVM running for 5.473)
+2020-12-10 14:47:53,134 [Thread-8] WARN  com.timer.banjian.service.BjAcceptService:78 - 系统异常：请求异常：Connection timed out: connect
+2020-12-10 14:47:53,152 [Thread-8] WARN  com.timer.socketServer.SocketService:34 - 系统异常：请求异常：Connection timed out: connect
+2020-12-10 14:47:53,244 [Thread-8] DEBUG org.hibernate.SQL:103 - insert into sys_external_log (version, api_type, app_id, created, message, req_desc, res_desc, status, type) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-12-10 14:47:53,244 [Thread-8] DEBUG org.hibernate.SQL:103 - insert into sys_external_log (version, api_type, app_id, created, message, req_desc, res_desc, status, type) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-12-10 14:47:53,289 [Thread-8] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2020-12-10 14:47:53,398 [Thread-8] DEBUG org.hibernate.SQL:103 - select sysexterna0_.id as id1_3_, sysexterna0_.version as version2_3_, sysexterna0_.api_type as api_type3_3_, sysexterna0_.app_id as app_id4_3_, sysexterna0_.created as created5_3_, sysexterna0_.message as message6_3_, sysexterna0_.req_desc as req_desc7_3_, sysexterna0_.res_desc as res_desc8_3_, sysexterna0_.status as status9_3_, sysexterna0_.type as type10_3_ from sys_external_log sysexterna0_ where sysexterna0_.id=? limit ?
+2020-12-10 14:47:53,398 [Thread-8] DEBUG org.hibernate.SQL:103 - select sysexterna0_.id as id1_3_, sysexterna0_.version as version2_3_, sysexterna0_.api_type as api_type3_3_, sysexterna0_.app_id as app_id4_3_, sysexterna0_.created as created5_3_, sysexterna0_.message as message6_3_, sysexterna0_.req_desc as req_desc7_3_, sysexterna0_.res_desc as res_desc8_3_, sysexterna0_.status as status9_3_, sysexterna0_.type as type10_3_ from sys_external_log sysexterna0_ where sysexterna0_.id=? limit ?
+2020-12-10 14:50:44,830 [Thread-7] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2020-12-10 14:50:44,831 [Thread-7] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-10 14:50:44,836 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2020-12-10 14:50:44,845 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2020-12-10 14:50:52,650 [restartedMain] INFO  com.timer.TimerApplication:50 - Starting TimerApplication on 360PC-20151102P with PID 5684 (D:\svn\preedu\service\out\production\classes started by Administrator in D:\svn\preedu\service)
+2020-12-10 14:50:52,653 [restartedMain] INFO  com.timer.TimerApplication:652 - The following profiles are active: dev
+2020-12-10 14:50:52,725 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor:225 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-10 14:50:53,261 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-10 14:50:53,290 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2020-12-10 14:50:53,699 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig:1008 - {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-12-10 14:50:53,700 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+2020-12-10 14:50:53,972 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+2020-12-10 14:50:54,047 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-10 14:50:54,119 [restartedMain] INFO  org.hibernate.Version:46 - HHH000412: Hibernate Core {5.3.12.Final}
+2020-12-10 14:50:54,120 [restartedMain] INFO  org.hibernate.cfg.Environment:213 - HHH000206: hibernate.properties not found
+2020-12-10 14:50:54,258 [restartedMain] INFO  org.hibernate.annotations.common.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12-10 14:50:54,360 [restartedMain] INFO  org.hibernate.dialect.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-12-10 14:50:54,837 [restartedMain] INFO  org.hibernate.tuple.PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.timer.banjian.entity.SysExternalLog (class must be instantiated by Interceptor)
+2020-12-10 14:50:54,997 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-10 14:50:55,047 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2020-12-10 14:50:55,345 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2020-12-10 14:50:55,393 [restartedMain] INFO  com.timer.TimerApplication:59 - Started TimerApplication in 3.449 seconds (JVM running for 5.033)
+2020-12-10 14:52:00,002 [scheduling-1] INFO  com.timer.common.control.ScheduledControl:56 - start sync handle
+2020-12-10 14:52:21,159 [scheduling-1] WARN  com.timer.banjian.service.BjAcceptService:78 - 系统异常：请求异常：Connection timed out: connect
+2020-12-10 14:52:21,172 [scheduling-1] WARN  com.timer.common.control.ScheduledControl:66 - 系统异常：请求异常：Connection timed out: connect
+2020-12-10 14:52:21,256 [scheduling-1] DEBUG org.hibernate.SQL:103 - insert into sys_external_log (version, api_type, app_id, created, message, req_desc, res_desc, status, type) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-12-10 14:52:21,256 [scheduling-1] DEBUG org.hibernate.SQL:103 - insert into sys_external_log (version, api_type, app_id, created, message, req_desc, res_desc, status, type) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-12-10 14:52:21,293 [scheduling-1] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2020-12-10 14:52:21,347 [scheduling-1] DEBUG org.hibernate.SQL:103 - select sysexterna0_.id as id1_3_, sysexterna0_.version as version2_3_, sysexterna0_.api_type as api_type3_3_, sysexterna0_.app_id as app_id4_3_, sysexterna0_.created as created5_3_, sysexterna0_.message as message6_3_, sysexterna0_.req_desc as req_desc7_3_, sysexterna0_.res_desc as res_desc8_3_, sysexterna0_.status as status9_3_, sysexterna0_.type as type10_3_ from sys_external_log sysexterna0_ where sysexterna0_.id=? limit ?
+2020-12-10 14:52:21,347 [scheduling-1] DEBUG org.hibernate.SQL:103 - select sysexterna0_.id as id1_3_, sysexterna0_.version as version2_3_, sysexterna0_.api_type as api_type3_3_, sysexterna0_.app_id as app_id4_3_, sysexterna0_.created as created5_3_, sysexterna0_.message as message6_3_, sysexterna0_.req_desc as req_desc7_3_, sysexterna0_.res_desc as res_desc8_3_, sysexterna0_.status as status9_3_, sysexterna0_.type as type10_3_ from sys_external_log sysexterna0_ where sysexterna0_.id=? limit ?
+2020-12-10 14:52:21,438 [scheduling-1] INFO  com.timer.common.control.ScheduledControl:72 - end sync handle
+2020-12-10 14:52:21,439 [scheduling-1] INFO  com.timer.common.control.ScheduledControl:73 - 消耗时间：21433ms
+2020-12-10 14:53:12,634 [Thread-7] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2020-12-10 14:53:12,635 [Thread-7] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-10 14:53:12,638 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2020-12-10 14:53:12,645 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2020-12-10 14:58:04,770 [restartedMain] INFO  com.timer.TimerApplication:50 - Starting TimerApplication on 360PC-20151102P with PID 9316 (D:\svn\preedu\service\out\production\classes started by Administrator in D:\svn\preedu\service)
+2020-12-10 14:58:04,774 [restartedMain] INFO  com.timer.TimerApplication:652 - The following profiles are active: dev
+2020-12-10 14:58:04,840 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor:225 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-10 14:58:05,429 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-10 14:58:05,457 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2020-12-10 14:58:05,851 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig:1008 - {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-12-10 14:58:05,852 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+2020-12-10 14:58:06,128 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+2020-12-10 14:58:06,204 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-10 14:58:06,259 [restartedMain] INFO  org.hibernate.Version:46 - HHH000412: Hibernate Core {5.3.12.Final}
+2020-12-10 14:58:06,261 [restartedMain] INFO  org.hibernate.cfg.Environment:213 - HHH000206: hibernate.properties not found
+2020-12-10 14:58:06,397 [restartedMain] INFO  org.hibernate.annotations.common.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12-10 14:58:06,505 [restartedMain] INFO  org.hibernate.dialect.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-12-10 14:58:06,992 [restartedMain] INFO  org.hibernate.tuple.PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.timer.banjian.entity.SysExternalLog (class must be instantiated by Interceptor)
+2020-12-10 14:58:07,181 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-10 14:58:07,231 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2020-12-10 14:58:07,528 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2020-12-10 14:58:07,575 [restartedMain] INFO  com.timer.TimerApplication:59 - Started TimerApplication in 3.555 seconds (JVM running for 4.958)
+2020-12-10 14:58:35,987 [Thread-8] WARN  com.timer.banjian.service.BjAcceptService:78 - 系统异常：请求异常：Connection timed out: connect
+2020-12-10 14:58:35,998 [Thread-8] WARN  com.timer.socketServer.SocketService:34 - 系统异常：请求异常：Connection timed out: connect
+2020-12-10 14:58:36,078 [Thread-8] DEBUG org.hibernate.SQL:103 - insert into sys_external_log (version, api_type, app_id, created, message, req_desc, res_desc, status, type) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-12-10 14:58:36,078 [Thread-8] DEBUG org.hibernate.SQL:103 - insert into sys_external_log (version, api_type, app_id, created, message, req_desc, res_desc, status, type) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-12-10 14:58:36,101 [Thread-8] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2020-12-10 14:58:36,160 [Thread-8] DEBUG org.hibernate.SQL:103 - select sysexterna0_.id as id1_3_, sysexterna0_.version as version2_3_, sysexterna0_.api_type as api_type3_3_, sysexterna0_.app_id as app_id4_3_, sysexterna0_.created as created5_3_, sysexterna0_.message as message6_3_, sysexterna0_.req_desc as req_desc7_3_, sysexterna0_.res_desc as res_desc8_3_, sysexterna0_.status as status9_3_, sysexterna0_.type as type10_3_ from sys_external_log sysexterna0_ where sysexterna0_.id=? limit ?
+2020-12-10 14:58:36,160 [Thread-8] DEBUG org.hibernate.SQL:103 - select sysexterna0_.id as id1_3_, sysexterna0_.version as version2_3_, sysexterna0_.api_type as api_type3_3_, sysexterna0_.app_id as app_id4_3_, sysexterna0_.created as created5_3_, sysexterna0_.message as message6_3_, sysexterna0_.req_desc as req_desc7_3_, sysexterna0_.res_desc as res_desc8_3_, sysexterna0_.status as status9_3_, sysexterna0_.type as type10_3_ from sys_external_log sysexterna0_ where sysexterna0_.id=? limit ?
+2020-12-10 14:58:47,755 [Thread-7] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2020-12-10 14:58:47,756 [Thread-7] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-10 14:58:47,765 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2020-12-10 14:58:47,775 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2020-12-10 15:00:20,203 [restartedMain] INFO  com.timer.TimerApplication:50 - Starting TimerApplication on 360PC-20151102P with PID 10964 (D:\svn\preedu\service\out\production\classes started by Administrator in D:\svn\preedu\service)
+2020-12-10 15:00:20,207 [restartedMain] INFO  com.timer.TimerApplication:652 - The following profiles are active: dev
+2020-12-10 15:00:20,279 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor:225 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-10 15:00:20,897 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-10 15:00:20,930 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2020-12-10 15:00:21,371 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig:1008 - {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-12-10 15:00:21,371 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+2020-12-10 15:00:21,629 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+2020-12-10 15:00:21,702 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-10 15:00:21,754 [restartedMain] INFO  org.hibernate.Version:46 - HHH000412: Hibernate Core {5.3.12.Final}
+2020-12-10 15:00:21,756 [restartedMain] INFO  org.hibernate.cfg.Environment:213 - HHH000206: hibernate.properties not found
+2020-12-10 15:00:21,909 [restartedMain] INFO  org.hibernate.annotations.common.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12-10 15:00:22,019 [restartedMain] INFO  org.hibernate.dialect.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-12-10 15:00:22,519 [restartedMain] INFO  org.hibernate.tuple.PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.timer.banjian.entity.SysExternalLog (class must be instantiated by Interceptor)
+2020-12-10 15:00:22,681 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-10 15:00:22,737 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2020-12-10 15:00:23,063 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2020-12-10 15:00:23,111 [restartedMain] INFO  com.timer.TimerApplication:59 - Started TimerApplication in 3.73 seconds (JVM running for 5.232)
+2020-12-10 15:00:36,430 [Thread-7] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2020-12-10 15:00:36,432 [Thread-7] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-10 15:00:36,436 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2020-12-10 15:00:36,443 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2020-12-10 15:09:42,944 [restartedMain] INFO  com.timer.TimerApplication:50 - Starting TimerApplication on 360PC-20151102P with PID 1464 (D:\svn\preedu\service\out\production\classes started by Administrator in D:\svn\preedu\service)
+2020-12-10 15:09:42,948 [restartedMain] INFO  com.timer.TimerApplication:652 - The following profiles are active: dev
+2020-12-10 15:09:43,032 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor:225 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-10 15:09:43,619 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-10 15:09:43,648 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-12-10 15:09:44,058 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+2020-12-10 15:09:44,297 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+2020-12-10 15:09:44,336 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-10 15:09:44,422 [restartedMain] INFO  org.hibernate.Version:46 - HHH000412: Hibernate Core {5.3.12.Final}
+2020-12-10 15:09:44,424 [restartedMain] INFO  org.hibernate.cfg.Environment:213 - HHH000206: hibernate.properties not found
+2020-12-10 15:09:44,576 [restartedMain] INFO  org.hibernate.annotations.common.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12-10 15:09:44,719 [restartedMain] INFO  org.hibernate.dialect.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-12-10 15:09:45,219 [restartedMain] INFO  org.hibernate.tuple.PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.timer.banjian.entity.SysExternalLog (class must be instantiated by Interceptor)
+2020-12-10 15:09:45,394 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-10 15:09:45,445 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2020-12-10 15:09:45,757 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2020-12-10 15:09:45,802 [restartedMain] INFO  com.timer.TimerApplication:59 - Started TimerApplication in 3.574 seconds (JVM running for 5.239)
+2020-12-10 15:09:48,512 [Thread-7] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2020-12-10 15:09:48,514 [Thread-7] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-10 15:09:48,518 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2020-12-10 15:09:48,525 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2020-12-10 16:06:44,288 [restartedMain] INFO  com.timer.TimerApplication:50 - Starting TimerApplication on 360PC-20151102P with PID 8484 (D:\svn\preedu\service\out\production\classes started by Administrator in D:\svn\preedu\service)
+2020-12-10 16:06:44,291 [restartedMain] INFO  com.timer.TimerApplication:652 - The following profiles are active: dev
+2020-12-10 16:06:44,403 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor:225 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-10 16:06:45,084 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-10 16:06:45,118 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2020-12-10 16:06:45,597 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig:1008 - {} - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2020-12-10 16:06:45,597 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+2020-12-10 16:06:45,851 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+2020-12-10 16:06:45,910 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-10 16:06:45,973 [restartedMain] INFO  org.hibernate.Version:46 - HHH000412: Hibernate Core {5.3.12.Final}
+2020-12-10 16:06:45,975 [restartedMain] INFO  org.hibernate.cfg.Environment:213 - HHH000206: hibernate.properties not found
+2020-12-10 16:06:46,114 [restartedMain] INFO  org.hibernate.annotations.common.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12-10 16:06:46,231 [restartedMain] INFO  org.hibernate.dialect.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-12-10 16:06:46,752 [restartedMain] INFO  org.hibernate.tuple.PojoInstantiator:47 - HHH000182: No default (no-argument) constructor for class: com.timer.banjian.entity.SysExternalLog (class must be instantiated by Interceptor)
+2020-12-10 16:06:46,921 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-10 16:06:46,977 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2020-12-10 16:06:47,284 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2020-12-10 16:06:47,333 [restartedMain] INFO  com.timer.TimerApplication:59 - Started TimerApplication in 3.799 seconds (JVM running for 5.364)
+2020-12-10 16:06:50,004 [Thread-7] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2020-12-10 16:06:50,006 [Thread-7] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean:598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-10 16:06:50,010 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2020-12-10 16:06:50,016 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource:352 - HikariPool-1 - Shutdown completed.
